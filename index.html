@@ -6,7 +6,6 @@
         <title>Te Puia</title>
         <link rel="stylesheet" href="css/globals.css" />
         <link rel="stylesheet" href="css/reset.css" />
-        <script src="https://cdn.tailwindcss.com"></script>
         <style>
             .background-video {
                 position: fixed;
@@ -20,21 +19,19 @@
             }
         </style>
     </head>
-    <body class="flex flex-col bg-black">
+    <body class="index_body">
         <div class="video-container">
             <video class="background-video" autoplay muted loop>
                 <source src="/assets/Te Puia Home Page.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
         </div>
-        <navbar
-            class="w-full flex justify-between items-center px-16 py-4 fixed top-0"
-        >
+        <navbar>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="60"
                 viewBox="0 0 351.321 178.89"
-                class="hover:opacity-60 transition duration-300 ease-in-out"
+                class="navbar_logo"
                 onclick="window.location.href = '/';"
             >
                 <g id="tepuia-logo-white" transform="translate(0 0)">
@@ -398,27 +395,13 @@
                     </g>
                 </g>
             </svg>
-            <div class="text-white flex items-center">
-                <a
-                    href="/spaces.html"
-                    class="bg-white duration-300 bg-opacity-0 hover:bg-opacity-30 w-32 h-16 text-center flex items-center justify-center"
-                    >Our Spaces</a
-                >
-                <a
-                    href="/experiences.html"
-                    class="bg-white duration-300 bg-opacity-0 hover:bg-opacity-30 w-32 h-16 text-center flex items-center justify-center"
-                    >Experiences</a
-                >
-                <a
-                    href="/contact.html"
-                    class="bg-white duration-300 bg-opacity-0 hover:bg-opacity-30 w-32 h-16 text-center flex items-center justify-center"
-                    >Contact</a
-                >
+            <div class="navbar_item_container">
+                <a href="/spaces.html" class="navbar_item">Our Spaces</a>
+                <a href="/experiences.html" class="navbar_item">Experiences</a>
+                <a href="/contact.html" class="navbar_item">Contact</a>
             </div>
         </navbar>
-        <hero
-            class="h-screen flex flex-col justify-center items-center text-white"
-        >
+        <hero>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="351.321"

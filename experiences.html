@@ -6,15 +6,14 @@
         <title>Te Puia</title>
         <link rel="stylesheet" href="css/globals.css" />
         <link rel="stylesheet" href="css/reset.css" />
-        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body class="flex flex-col bg-white">
-        <navbar class="w-full flex justify-between items-center px-16 py-4">
+    <body class="experiences_body">
+        <navbar>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="60"
                 viewBox="0 0 157.112 80"
-                class="hover:opacity-60 transition duration-300 ease-in-out"
+                class="navbar_logo"
                 onclick="window.location.href = '/';"
             >
                 <g id="tepuia-logo-horizontal" transform="translate(0 0.001)">
@@ -379,27 +378,17 @@
                 </g>
             </svg>
 
-            <div class="flex items-center">
-                <a
-                    href="/spaces.html"
-                    class="bg-black hover:text-white duration-300 bg-opacity-0 hover:bg-opacity-50 w-32 h-16 text-center flex items-center justify-center"
-                    >Our Spaces</a
-                >
-                <a
-                    href="/experiences.html"
-                    class="bg-black hover:text-white duration-300 bg-opacity-0 hover:bg-opacity-50 w-32 h-16 text-center flex items-center justify-center"
+            <div class="navbar_item_container">
+                <a href="/spaces.html" class="navbar_item_black">Our Spaces</a>
+                <a href="/experiences.html" class="navbar_item_black"
                     >Experiences</a
                 >
-                <a
-                    href="/contact.html"
-                    class="bg-black hover:text-white duration-300 bg-opacity-0 hover:bg-opacity-50 w-32 h-16 text-center flex items-center justify-center"
-                    >Contact</a
-                >
+                <a href="/contact.html" class="navbar_item_black">Contact</a>
             </div>
         </navbar>
-        <section class="w-full px-16 my-32 grid grid-cols-2 gap-4">
+        <section class="experiences_section">
             <div
-                class="relative py-20 px-16 flex items-center w-full"
+                class="experiences_item"
                 style="
                     background-image: url(./assets/0905-0348_te-puia-te-ra-guided-experience-newzealand-pelago0.jpg);
                     background-size: cover;
@@ -407,25 +396,23 @@
                 "
                 onclick="window.location.href = 'https://ecommerce.tepuia.com/te-ra-guided-experience?_gl=1*1ar3ahf*_gcl_au*NzM4NzczOTY5LjE3MjU4NzY2OTI.*_ga*MTYyMjIyNDA3Ni4xNzI1ODc2Njky*_ga_63G1L8BLBQ*MTcyNTg3NjY5MS4xLjEuMTcyNTg3ODQzNC41OS4wLjA.'"
             >
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <div class="relative flex flex-col gap-4 justify-center w-full">
-                    <h1 class="text-4xl font-bold text-white">
+                <div class="experiences_item_dim"></div>
+                <div class="experiences_item_textcontainer">
+                    <h1 class="experiences_item_header">
                         Te Rā Guided Experience
                     </h1>
-                    <div class="flex justify-between items-center w-full">
-                        <p class="text-white w-2/3">
+                    <div class="experiences_item_bodycontainer">
+                        <p class="experiences_body_text">
                             World-class guided experience
                         </p>
-                        <button
-                            class="px-4 py-2 bg-[#BD1E2B] text-white text-sm hover:scale-105 transition duration-200"
-                        >
+                        <button class="experiences_body_button">
                             Book Now
                         </button>
                     </div>
                 </div>
             </div>
             <div
-                class="relative py-20 px-16 flex items-center w-full"
+                class="experiences_item"
                 style="
                     background-image: url(./assets/0001018_experience-te-puia.jpeg);
                     background-size: cover;
@@ -433,25 +420,21 @@
                 "
                 onclick="window.location.href = 'https://ecommerce.tepuia.com/haka?_gl=1*1k7sajg*_gcl_au*NzM4NzczOTY5LjE3MjU4NzY2OTI.*_ga*MTYyMjIyNDA3Ni4xNzI1ODc2Njky*_ga_63G1L8BLBQ*MTcyNTg3NjY5MS4xLjEuMTcyNTg3ODQzNC41OS4wLjA.'"
             >
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <div class="relative flex flex-col gap-4 justify-center w-full">
-                    <h1 class="text-4xl font-bold text-white">
-                        Te Rā + Haka combo
-                    </h1>
-                    <div class="flex justify-between items-center w-full">
-                        <p class="text-white w-2/3">
+                <div class="experiences_item_dim"></div>
+                <div class="experiences_item_textcontainer">
+                    <h1 class="experiences_item_header">Te Rā + Haka combo</h1>
+                    <div class="experiences_item_bodycontainer">
+                        <p class="experiences_body_text">
                             Guided experience & cultural performance
                         </p>
-                        <button
-                            class="px-4 py-2 bg-[#BD1E2B] text-white text-sm hover:scale-105 transition duration-200"
-                        >
+                        <button class="experiences_body_button">
                             Book Now
                         </button>
                     </div>
                 </div>
             </div>
             <div
-                class="relative py-20 px-16 flex items-center w-full"
+                class="experiences_item"
                 style="
                     background-image: url(./assets/Pātaka\ Kai.jpg);
                     background-size: cover;
@@ -459,23 +442,21 @@
                 "
                 onclick="window.location.href = 'https://ecommerce.tepuia.com/te-p%C5%8D-indigenous-experience?_gl=1*1k7sajg*_gcl_au*NzM4NzczOTY5LjE3MjU4NzY2OTI.*_ga*MTYyMjIyNDA3Ni4xNzI1ODc2Njky*_ga_63G1L8BLBQ*MTcyNTg3NjY5MS4xLjEuMTcyNTg3ODQzNC41OS4wLjA.'"
             >
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <div class="relative flex flex-col gap-4 justify-center w-full">
-                    <h1 class="text-4xl font-bold text-white">Te Pō</h1>
-                    <div class="flex justify-between items-center w-full">
-                        <p class="text-white w-2/3">
+                <div class="experiences_item_dim"></div>
+                <div class="experiences_item_textcontainer">
+                    <h1 class="experiences_item_header">Te Pō</h1>
+                    <div class="experiences_item_bodycontainer">
+                        <p class="experiences_body_text">
                             Mouth-watering buffet dinner & Haka
                         </p>
-                        <button
-                            class="px-4 py-2 bg-[#BD1E2B] text-white text-sm hover:scale-105 transition duration-200"
-                        >
+                        <button class="experiences_body_button">
                             Book Now
                         </button>
                     </div>
                 </div>
             </div>
             <div
-                class="relative py-20 px-16 flex items-center w-full"
+                class="experiences_item"
                 style="
                     background-image: url(./assets/guidedpo.jpg);
                     background-size: cover;
@@ -483,23 +464,21 @@
                 "
                 onclick="window.location.href = 'https://ecommerce.tepuia.com/te-p%C5%8D-combo?_gl=1*1k7sajg*_gcl_au*NzM4NzczOTY5LjE3MjU4NzY2OTI.*_ga*MTYyMjIyNDA3Ni4xNzI1ODc2Njky*_ga_63G1L8BLBQ*MTcyNTg3NjY5MS4xLjEuMTcyNTg3ODQzNC41OS4wLjA.'"
             >
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <div class="relative flex flex-col gap-4 justify-center w-full">
-                    <h1 class="text-4xl font-bold text-white">Te Pō Combo</h1>
-                    <div class="flex justify-between items-center w-full">
-                        <p class="text-white w-2/3">
+                <div class="experiences_item_dim"></div>
+                <div class="experiences_item_textcontainer">
+                    <h1 class="experiences_item_header">Te Pō Combo</h1>
+                    <div class="experiences_item_bodycontainer">
+                        <p class="experiences_body_text">
                             Guided Experience, buffet dinner & Haka
                         </p>
-                        <button
-                            class="px-4 py-2 bg-[#BD1E2B] text-white text-sm hover:scale-105 transition duration-200"
-                        >
+                        <button class="experiences_body_button">
                             Book Now
                         </button>
                     </div>
                 </div>
             </div>
             <div
-                class="relative py-20 px-16 flex items-center w-full"
+                class="experiences_item"
                 style="
                     background-image: url(./assets/0905-0344_te-puia-experiences-geyser-by-night-newzealand-pelago0.jpg);
                     background-size: cover;
@@ -507,25 +486,21 @@
                 "
                 onclick="window.location.href = 'https://ecommerce.tepuia.com/geyser-by-night?_gl=1*ufw5al*_gcl_au*NzM4NzczOTY5LjE3MjU4NzY2OTI.*_ga*MTYyMjIyNDA3Ni4xNzI1ODc2Njky*_ga_63G1L8BLBQ*MTcyNTg3NjY5MS4xLjEuMTcyNTg3ODQzNC41OS4wLjA.'"
             >
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <div class="relative flex flex-col gap-4 justify-center w-full">
-                    <h1 class="text-4xl font-bold text-white">
-                        Geyser By Night
-                    </h1>
-                    <div class="flex justify-between items-center w-full">
-                        <p class="text-white w-2/3">
+                <div class="experiences_item_dim"></div>
+                <div class="experiences_item_textcontainer">
+                    <h1 class="experiences_item_header">Geyser By Night</h1>
+                    <div class="experiences_item_bodycontainer">
+                        <p class="experiences_body_text">
                             Rotorua’s geothermal wonderland
                         </p>
-                        <button
-                            class="px-4 py-2 bg-[#BD1E2B] text-white text-sm hover:scale-105 transition duration-200"
-                        >
+                        <button class="experiences_body_button">
                             Book Now
                         </button>
                     </div>
                 </div>
             </div>
             <div
-                class="relative py-20 px-16 flex items-center w-full"
+                class="experiences_item"
                 style="
                     background-image: url(./assets/WhanauSML_A.png);
                     background-size: cover;
@@ -533,16 +508,14 @@
                 "
                 onclick="window.location.href = 'https://www.tepuia.com/whanau-card/'"
             >
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <div class="relative flex flex-col gap-4 justify-center w-full">
-                    <h1 class="text-4xl font-bold text-white">Whānau Card</h1>
-                    <div class="flex justify-between items-center w-full">
-                        <p class="text-white w-2/3">
+                <div class="experiences_item_dim"></div>
+                <div class="experiences_item_textcontainer">
+                    <h1 class="experiences_item_header">Whānau Card</h1>
+                    <div class="experiences_item_bodycontainer">
+                        <p class="experiences_body_text">
                             Become part of the legacy
                         </p>
-                        <button
-                            class="px-4 py-2 bg-[#BD1E2B] text-white text-sm hover:scale-105 transition duration-200"
-                        >
+                        <button class="experiences_body_button">
                             Join Now
                         </button>
                     </div>

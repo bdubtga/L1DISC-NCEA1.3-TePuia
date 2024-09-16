@@ -6,15 +6,14 @@
         <title>Te Puia</title>
         <link rel="stylesheet" href="css/globals.css" />
         <link rel="stylesheet" href="css/reset.css" />
-        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body class="flex flex-col bg-white">
-        <navbar class="w-full flex justify-between items-center px-16 py-4">
+    <body class="spaces_body">
+        <navbar>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="60"
                 viewBox="0 0 157.112 80"
-                class="hover:opacity-60 transition duration-300 ease-in-out"
+                class="navbar_logo"
                 onclick="window.location.href = '/';"
             >
                 <g id="tepuia-logo-horizontal" transform="translate(0 0.001)">
@@ -379,30 +378,18 @@
                 </g>
             </svg>
 
-            <div class="flex items-center">
-                <a
-                    href="/spaces.html"
-                    class="bg-black hover:text-white duration-300 bg-opacity-0 hover:bg-opacity-50 w-32 h-16 text-center flex items-center justify-center"
-                    >Our Spaces</a
-                >
-                <a
-                    href="/experiences.html"
-                    class="bg-black hover:text-white duration-300 bg-opacity-0 hover:bg-opacity-50 w-32 h-16 text-center flex items-center justify-center"
+            <div class="navbar_item_container">
+                <a href="/spaces.html" class="navbar_item_black">Our Spaces</a>
+                <a href="/experiences.html" class="navbar_item_black"
                     >Experiences</a
                 >
-                <a
-                    href="/contact.html"
-                    class="bg-black hover:text-white duration-300 bg-opacity-0 hover:bg-opacity-50 w-32 h-16 text-center flex items-center justify-center"
-                    >Contact</a
-                >
+                <a href="/contact.html" class="navbar_item_black">Contact</a>
             </div>
         </navbar>
-        <section
-            class="w-full flex flex-col justify-center items-start px-16 my-32 gap-16"
-        >
+        <section class="spaces_section">
             <!-- section for Pātaka Kai Restaurant, Āhua Gallery, Kiwi Conservation Centre-->
             <div
-                class="relative py-48 px-16 flex items-center hover:shadow-2xl hover:-translate-y-2 transition duration-200 w-full"
+                class="spaces_item"
                 style="
                     background-image: url(./assets/Pātaka\ Kai.jpg);
                     background-size: cover;
@@ -410,12 +397,10 @@
                 "
                 onclick="window.location.href = 'https://www.tepuia.com/food/'"
             >
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <div class="relative flex flex-col gap-4 justify-center">
-                    <h1 class="text-6xl font-bold text-white">
-                        Pātaka Kai Restaurant
-                    </h1>
-                    <p class="text-white w-1/2">
+                <div class="spaces_item_dim"></div>
+                <div class="spaces_item_container">
+                    <h1 class="spaces_item_heading">Pātaka Kai Restaurant</h1>
+                    <p class="spaces_item_text">
                         Experience breathtaking views of the magnificent Te
                         Whakarewarewa geothermal valley when you dine at Pātaka
                         Kai, Restaurant, Café & Bar.
@@ -423,7 +408,7 @@
                 </div>
             </div>
             <div
-                class="relative py-48 px-16 flex items-center hover:shadow-2xl hover:-translate-y-2 transition duration-200 w-full"
+                class="spaces_item"
                 style="
                     background-image: url(./assets/Ahua\ Gallery.jpeg);
                     background-size: cover;
@@ -431,10 +416,10 @@
                 "
                 onclick="window.location.href = 'https://ahua.dorik.io/'"
             >
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <div class="relative flex flex-col gap-4 justify-center">
-                    <h1 class="text-6xl font-bold text-white">Āhua Gallery</h1>
-                    <p class="text-white w-1/2">
+                <div class="spaces_item_dim"></div>
+                <div class="spaces_item_container">
+                    <h1 class="spaces_item_heading">Āhua Gallery</h1>
+                    <p class="spaces_item_text">
                         Āhua Gallery offers a bespoke collection of Māori
                         taonga, hand crafted by our master carvers, weavers and
                         students of The New Zealand Māori Arts & Crafts
@@ -443,7 +428,7 @@
                 </div>
             </div>
             <div
-                class="relative py-48 px-16 flex items-center hover:shadow-2xl hover:-translate-y-2 transition duration-200 w-full"
+                class="spaces_item"
                 style="
                     background-image: url(./assets/Kiwi\ Conservation\ Centre\ 1300x730.jpg);
                     background-size: cover;
@@ -451,12 +436,12 @@
                 "
                 onclick="window.location.href = 'https://www.tepuia.com/kiwi-conservation-centre/'"
             >
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <div class="relative flex flex-col gap-4 justify-center">
-                    <h1 class="text-6xl font-bold text-white">
+                <div class="spaces_item_dim"></div>
+                <div class="spaces_item_container">
+                    <h1 class="spaces_item_heading">
                         Kiwi Conservation Centre
                     </h1>
-                    <p class="text-white w-1/2">
+                    <p class="spaces_item_text">
                         Te Puia’s Kiwi Conservation Centre provides an
                         unparalleled experience with our national treasures. for
                         visitors who purchase Te Rā, Te Rā + Haka, and Te Pō
@@ -469,11 +454,9 @@
             </div>
         </section>
     </body>
-    <footer
-        class="w-screen flex flex-col gap-8 items-center justify-center mb-4"
-    >
-        <ul class="flex gap-2 scale-150">
-            <li class="list-inline-item px-3">
+    <footer>
+        <ul>
+            <li>
                 <a
                     href="https://www.facebook.com/tepuia.rotorua.nz/"
                     class="text-dark"
@@ -499,7 +482,7 @@
                     </svg>
                 </a>
             </li>
-            <li class="list-inline-item px-3">
+            <li>
                 <a href="https://twitter.com/Te_Puia" class="text-dark">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -522,7 +505,7 @@
                     </svg>
                 </a>
             </li>
-            <li class="list-inline-item px-3">
+            <li>
                 <a href="https://www.instagram.com/te_puia/" class="text-dark">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -545,7 +528,7 @@
                     </svg>
                 </a>
             </li>
-            <li class="list-inline-item px-3">
+            <li>
                 <a
                     href="https://www.youtube.com/channel/UCsmZvq3uW5Fuk9iyGkIeQlA"
                     class="text-dark"
